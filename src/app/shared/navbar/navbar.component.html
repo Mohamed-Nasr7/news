@@ -1,0 +1,18 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/intial">
+      <img src="../../../assets/kisspng-united-kingdom-logo-breaking-news-politics-5ab9dd250a4e36.1787637515221302130422.jpg" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mx-2">
+            <li class="nav-item mx-2" *ngFor="let categ of catgs; let i = index">
+              <a class="nav-link" [routerLink]="['/home', categ.ID]">{{categ.Name}}</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>

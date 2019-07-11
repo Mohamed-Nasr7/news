@@ -1,0 +1,6 @@
+<div class="card my-4 mb-5" *ngFor="let item of categs">
+    <img class="card-img-top" [src]="item.Image" alt="Card image cap">
+    <div class="card-body  text-center">
+      <a [routerLink]= "['/news-details', item.ID]" class="card-link"> {{item.Name}} </a>
+    </div>
+  </div>
